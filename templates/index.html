@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | PrimeProperty Predictor</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <div class="logo">
+        <i class="fas fa-home"></i>
+        <h1>PrimeProperty Predictor</h1>
+      </div>
+      <nav>
+        <a href="{{ url_for('home') }}" class="active">Home</a>
+        <a href="{{ url_for('predict_page') }}">Predict</a>
+        <a href="{{ url_for('gallery') }}">Gallery</a>
+        <a href="{{ url_for('contact') }}">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero fade-in">
+      <h2>Smart Property Valuation for Indian Real Estate</h2>
+      <p>Get accurate price predictions for properties across major Indian cities based on location, amenities, and market trends.</p>
+      <a href="{{ url_for('predict_page') }}" class="btn btn-large">Get Price Estimate</a>
+    </section>
+
+    <section class="features">
+      <h2 style="text-align: center; margin-bottom: 2rem;">Why Choose Our Service?</h2>
+      <div class="gallery">
+        <div class="property-card">
+          <div class="property-image">
+            <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Accurate Estimates">
+          </div>
+          <div class="property-details">
+            <h3>Accurate Estimates</h3>
+            <p>Our advanced algorithm provides precise price predictions based on current market data.</p>
+          </div>
+        </div>
+        
+        <div class="property-card">
+          <div class="property-image">
+            <img src="https://images.unsplash.com/photo-1582407947304-fd86f028f716?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Nationwide Coverage">
+          </div>
+          <div class="property-details">
+            <h3>Nationwide Coverage</h3>
+            <p>Get estimates for properties in all major Indian cities and localities.</p>
+          </div>
+        </div>
+        
+        <div class="property-card">
+          <div class="property-image">
+            <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Instant Results">
+          </div>
+          <div class="property-details">
+            <h3>Instant Results</h3>
+            <p>Receive your property valuation in seconds with our streamlined process.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 PrimeProperty Predictor | Bangalore</p>
+  </footer>
+</body>
+</html>

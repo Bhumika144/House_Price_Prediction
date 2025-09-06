@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery | PrimeProperty Predictor</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <div class="logo">
+        <i class="fas fa-home"></i>
+        <h1>PrimeProperty Predictor</h1>
+      </div>
+      <nav>
+        <a href="{{ url_for('home') }}">Home</a>
+        <a href="{{ url_for('predict_page') }}">Predict</a>
+        <a href="{{ url_for('gallery') }}" class="active">Gallery</a>
+        <a href="{{ url_for('contact') }}">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h2 style="text-align: center; margin-bottom: 1rem;">Property Gallery</h2>
+    <p style="text-align: center; max-width: 800px; margin: 0 auto 2rem; color: #666;">
+      Explore our curated collection of properties across India. Each listing includes estimated prices based on current market trends.
+    </p>
+
+    <div class="gallery">
+      <div class="property-card fade-in">
+        <div class="property-image">
+          <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Luxury Apartment">
+        </div>
+        <div class="property-details">
+          <h3>3 BHK Luxury Apartment</h3>
+          <p><i class="fas fa-map-marker-alt"></i> Andheri West, Mumbai</p>
+          <p><i class="fas fa-expand"></i> 1200 sq ft • <i class="fas fa-bed"></i> 3 Beds • <i class="fas fa-bath"></i> 2 Baths</p>
+          <p><i class="fas fa-couch"></i> Fully Furnished</p>
+          <p class="property-price">Estimated Price: ₹ 1.82 Crores</p>
+        </div>
+      </div>
+
+      <div class="property-card fade-in">
+        <div class="property-image">
+          <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Modern Villa">
+        </div>
+        <div class="property-details">
+          <h3>4 BHK Modern Villa</h3>
+          <p><i class="fas fa-map-marker-alt"></i> Whitefield, Bangalore</p>
+          <p><i class="fas fa-expand"></i> 2400 sq ft • <i class="fas fa-bed"></i> 4 Beds • <i class="fas fa-bath"></i> 3 Baths</p>
+          <p><i class="fas fa-couch"></i> Semi-Furnished</p>
+          <p class="property-price">Estimated Price: ₹ 2.45 Crores</p>
+        </div>
+      </div>
+
+      <div class="property-card fade-in">
+        <div class="property-image">
+          <img src="https://images.unsplash.com/photo-1600566753052-dc67f3f2d6fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Independent House">
+        </div>
+        <div class="property-details">
+          <h3>5 BHK Independent House</h3>
+          <p><i class="fas fa-map-marker-alt"></i> Jubilee Hills, Hyderabad</p>
+          <p><i class="fas fa-expand"></i> 3200 sq ft • <i class="fas fa-bed"></i> 5 Beds • <i class="fas fa-bath"></i> 4 Baths</p>
+          <p><i class="fas fa-couch"></i> Unfurnished</p>
+          <p class="property-price">Estimated Price: ₹ 3.75 Crores</p>
+        </div>
+      </div>
+
+      <div class="property-card fade-in">
+        <div class="property-image">
+          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Apartment Complex">
+        </div>
+        <div class="property-details">
+          <h3>2 BHK Affordable Apartment</h3>
+          <p><i class="fas fa-map-marker-alt"></i> Baner, Pune</p>
+          <p><i class="fas fa-expand"></i> 850 sq ft • <i class="fas fa-bed"></i> 2 Beds • <i class="fas fa-bath"></i> 2 Baths</p>
+          <p><i class="fas fa-couch"></i> Semi-Furnished</p>
+          <p class="property-price">Estimated Price: ₹ 72 Lakhs</p>
+        </div>
+      </div>
+
+      <div class="property-card fade-in">
+        <div class="property-image">
+          <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Penthouse">
+        </div>
+        <div class="property-details">
+          <h3>3 BHK Penthouse</h3>
+          <p><i class="fas fa-map-marker-alt"></i> Salt Lake, Kolkata</p>
+          <p><i class="fas fa-expand"></i> 1800 sq ft • <i class="fas fa-bed"></i> 3 Beds • <i class="fas fa-bath"></i> 3 Baths</p>
+          <p><i class="fas fa-couch"></i> Fully Furnished</p>
+          <p class="property-price">Estimated Price: ₹ 1.35 Crores</p>
+        </div>
+      </div>
+
+      <div class="property-card fade-in">
+        <div class="property-image">
+          <img src="https://images.unsplash.com/photo-1600585154516-50f6a76a9c9f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Luxury Villa">
+        </div>
+        <div class="property-details">
+          <h3>5 BHK Luxury Villa</h3>
+          <p><i class="fas fa-map-marker-alt"></i> Hauz Khas, Delhi</p>
+          <p><i class="fas fa-expand"></i> 3800 sq ft • <i class="fas fa-bed"></i> 5 Beds • <i class="fas fa-bath"></i> 4 Baths</p>
+          <p><i class="fas fa-couch"></i> Fully Furnished</p>
+          <p class="property-price">Estimated Price: ₹ 4.25 Crores</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 PrimeProperty Predictor | Bangalore,</p>
+  </footer>
+</body>
+</html>
